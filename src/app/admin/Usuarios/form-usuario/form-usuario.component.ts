@@ -40,10 +40,10 @@ export class FormUsuarioComponent implements OnInit {
           this.usuario = usuario;
 
           this.formulario = this.fb.group({
-            nombres: [usuario.nombres, [Validators.required, Validators.minLength(3), Validators.maxLength(30)], []],
-            apellidos: [usuario.apellidos, [Validators.required, Validators.minLength(3), Validators.maxLength(30)]],
+            nombres: [usuario.nombres, [Validators.required, Validators.minLength(4)], []],
+            apellidos: [usuario.apellidos, [Validators.required, Validators.minLength(4)]],
             email: [usuario.email, [Validators.required, Validators.pattern("^.+@.+\..+$")]],
-            password: [usuario.password, [Validators.required, Validators.minLength(4), Validators.maxLength(10)]],
+            password: [usuario.password, [Validators.required, Validators.minLength(5)]],
             rol: [usuario.rol, [Validators.required]],
           });
         })

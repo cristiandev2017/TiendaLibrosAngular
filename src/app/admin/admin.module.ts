@@ -20,9 +20,9 @@ import { AdminLayoutComponent } from './admin-layout/admin-layout.component';
   declarations: [
     ListaLibrosComponent,
     FormLibroComponent,
-   ListaUsuariosComponent,
-   FormUsuarioComponent,
-   AdminLayoutComponent
+    ListaUsuariosComponent,
+    FormUsuarioComponent,
+    AdminLayoutComponent
   ],
   imports: [
     CommonModule,
