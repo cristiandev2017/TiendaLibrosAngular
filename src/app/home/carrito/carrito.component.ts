@@ -21,6 +21,11 @@ export class CarritoComponent implements OnInit {
     return this.carritoService.items;
   }
 
+  get total(){
+    return this.carritoService.items.map(i=> i.precio)
+    .reduce((i1,i2)=> i1+i2, 0)
+  }
+
   removerLibroDelCarrito(libro:Libro){
     this.carritoService.removerItem(libro)
   }
